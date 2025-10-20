@@ -16,6 +16,47 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: flex;
+}
+
+.content {
+  display: grid;
+  grid-template-areas: "result content__details";
+  grid-template-columns: 1fr 1fr;
+  width: 1140px;
+  height: 534px;
+  align-items: end; 
+  place-self: center;
+  gap: 30px;
+}
+
+.result {
+  grid-area: result;
+}
+
+.result__video {
+  inline-size: 100%;
+}
+
+.search-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) auto;
+  inline-size: 100%; 
+  justify-items: start; 
+  align-items: start;
+}
+
+.content__details {
+  grid-area: content__details;
+  display: flex;
+  flex-direction: column;
+  height: 534px;
+}
+
+.content__list-container {
+  height: 566px;
+  overflow: scroll;
+  margin-top: 26px;
 }
 
 h1,
