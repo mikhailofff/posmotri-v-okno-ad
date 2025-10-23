@@ -18,6 +18,35 @@ html {
   white-space: nowrap;
 }
 
+.button {
+  padding: 6px 73.5px;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  appearance: none;
+  outline: none;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+
 .page {
   inline-size: 1200px;
   block-size: 100%;
@@ -128,6 +157,12 @@ html {
   text-decoration: underline;
 }
 
+.search-form__submit-button {
+  place-self: end;
+  width: 194px;
+  height: 34px;
+}
+
 .content__details {
   grid-area: content__details;
   display: flex;
@@ -196,6 +231,10 @@ html {
   height: 103px;
   object-fit: fill;
   object-position: right center;
+}
+
+.more-button {
+  width: 100%;
 }
 
 h1,
