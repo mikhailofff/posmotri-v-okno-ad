@@ -204,6 +204,24 @@ html {
   min-width: 0;
 }
 
+.content__video-card:hover {
+  background-color: #545050;
+}
+
+.content__video-card:active {
+  background-color: transparent;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.content__video-card:focus {
+  outline: none;
+}
+
+.content__video-card:focus-visible {
+  outline: 1px solid #fff;
+}
+
 .content__video-card-description-container {
   flex-grow: 1;
   min-width: 0;
@@ -235,6 +253,7 @@ html {
 
 .more-button {
   width: 100%;
+  margin-top: 30px;
 }
 
 h1,
