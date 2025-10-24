@@ -192,6 +192,11 @@ html {
   gap: 30px;
 }
 
+.content__list-item {
+  padding-left: 3px;
+  padding-right: 3px; 
+}
+
 .content__card-link {
   text-decoration: none;
   color: #fff;
@@ -205,13 +210,14 @@ html {
 }
 
 .content__video-card:hover {
-  background-color: #545050;
-}
-
-.content__video-card:active {
   background-color: transparent;
   text-decoration: underline;
   text-underline-offset: 4px;
+}
+
+.content__video-card:active {
+  text-decoration: none;
+  background-color: #545050;
 }
 
 .content__video-card:focus {
@@ -249,6 +255,11 @@ html {
   height: 103px;
   object-fit: fill;
   object-position: right center;
+}
+
+.content__card-link_current {
+  background-color: #545050;
+  display: block;
 }
 
 .more-button {
