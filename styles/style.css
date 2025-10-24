@@ -77,6 +77,7 @@ html {
   width: 711px;
   height: 386px;
   margin-bottom: 16px;
+  position: relative;
 }
 
 
@@ -92,6 +93,7 @@ html {
   inline-size: 100%; 
   justify-items: start; 
   align-items: start;
+  gap: 40px;
 }
 
 .search-form__label {
@@ -102,15 +104,19 @@ html {
 .search-form__textfield {
   font-weight: 400;
   font-size: 18px;
-  color: rgb(255 255 255);
-  opacity: 70%;
   background-color: transparent;
+  color: #fff;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   border-left: none;
   border-right: none;
   appearance: none;
   outline: none;
+}
+
+.search-form__textfield::placeholder {
+  color: rgb(255 255 255);
+  opacity: 0.7;
 }
 
 .search-form__fieldset {
@@ -120,6 +126,7 @@ html {
 .search-form__fieldset-title {
   font-weight: 400;
   font-size: 18px;
+  margin-bottom: 5px;
 }
 
 .search-form__checkbox-list {
@@ -176,6 +183,7 @@ html {
 }
 
 .title {
+  font-family: 'Oswald';
   font-size: 75px;
   text-transform: uppercase;
   line-height: 94%;
@@ -188,6 +196,7 @@ html {
 .content__list-container {
   overflow: scroll;
   margin-top: 26px;
+  position: relative;
 }
 
 .content__list {
